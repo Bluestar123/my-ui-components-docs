@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "dist",
+    "sourceMap": false,
+    "target": "es6",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "allowJs": false,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "removeComments": false,
+    "declaration": true,
+    "isolatedModules": true,
+    "declarationDir": "dist",
+    "jsx": "preserve",
+    "lib": ["esnext", "dom"],
+    "types": ["jest", "node"],
+    "rootDir": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "my-ui-components-docs": ["src/"]
+    },
+    "plugins": ["@vuedx/typescript-plugin-vue"]
+  },
+  "include": ["src/index.ts"],
+  "exclude": ["node_modules", "dist"]
+}
